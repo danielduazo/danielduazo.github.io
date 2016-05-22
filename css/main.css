@@ -28,9 +28,11 @@ html{
 
 
 
-a{
-    text-decoration: underline;
-    color: #111;
+a {
+    color: #42dca3;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 ul{
