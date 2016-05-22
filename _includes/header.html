@@ -1,0 +1,15 @@
+<div class="title-bar">
+	<a id="title" href="/">Aaron Gunderson</a>
+	<ul class="link-section">
+		<li><a href="/about/">About</a></li>
+		<li><a href="/resources/Resume.pdf">Resume</a></li>
+		<li>
+			<a href="/contact/">Contact</a>
+			<ul>
+			{% for profile in site.data.profiles %}
+				<li><a href="{{ profile.url }}">{{ profile.name }}</a></li>
+			{% endfor %}
+			</ul>
+		</li>
+	</ul>
+</div>
