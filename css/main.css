@@ -35,23 +35,23 @@ a {
     transition: all .2s ease-in-out;
 }
 
-#linkedin a:link,
-#github a:link,
-#gmail a:link, {
-    color: #000;
-}
+a.linkedin {color: black;}
+a.linkedin:link {text-decoration: none; color: black;}
+a.linkedin:visited {text-decoration: none; color: black;}
+a.linkedin:hover {text-decoration: none; color: #007bb5;}
+a.linkedin.active {text-decoration: none; color: black;}
 
-#linkedin a:hover {
-    color: #007bb5;
-}
+a.github {color: black;}
+a.github:link {text-decoration: none; color: black;}
+a.github:visited {text-decoration: none; color: black;}
+a.github:hover {text-decoration: none; color: #437abe;}
+a.github.active {text-decoration: none; color: black;}
 
-#github a:hover{
-    color: #437abe;
-}
-
-#gmail a:hover{
-    color: #dd4b39;
-}
+a.gmail {color: black;}
+a.gmail:link {text-decoration: none; color: black;}
+a.gmail:visited {text-decoration: none; color: black;}
+a.gmail:hover {text-decoration: none; color: #dd4b39;}
+a.gmail.active {text-decoration: none; color: black;}
 
 ul{
     list-style-type: none;
