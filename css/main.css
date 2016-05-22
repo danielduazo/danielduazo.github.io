@@ -35,6 +35,24 @@ a {
     transition: all .2s ease-in-out;
 }
 
+#linkedin a:link,
+#github a:link,
+#gmail a:link, {
+    color: black;
+}
+
+#linkedin a:hover {
+    color: #007bb5;
+}
+
+#github a:hover{
+    color: #437abe;
+}
+
+#gmail a:hover{
+    color: #dd4b39;
+}
+
 ul{
     list-style-type: none;
 }
