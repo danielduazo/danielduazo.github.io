@@ -38,7 +38,7 @@ a {
 #linkedin a:link,
 #github a:link,
 #gmail a:link, {
-    color: black;
+    color: #000;
 }
 
 #linkedin a:hover {
