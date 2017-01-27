@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gas Money Calculator</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyALKhUPm8aKcUyqaMyy8uQFC9tA8lDnzBs&libraries=places'></script>
+	<script src='scripts.js'></script>	
+
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+</head>
+
+<body>
+<div id='top' class='container'>
+<h1 id='title'>Gas Money Calculator</h1>
+<p>This interactive web app uses the Google Maps Distance Matrix API, local gas prices*, and your car's make and model and its MPG** to effectively estimate the share of gas money to pay to your friend or driver.</p>
+<p class='x-small'>The inspiration for this web app came during summer 2016 when I was living in LA. My roommate, Bryan, was always driving me around so I created this calculator so I knew around how much gas money to toss him whenever we went on a long drive somewhere.</p>
+</div>
+
+<div id='interactive' class='container'>
+	<div id='googleMap'></div>
+
+	<div id='inputAddress'>
+		<label for='startAddress' onFocus='geolocate()'>Start</label> <input id='startAddress' type='text' size='50'>
+		<input id='startLat' type='hidden'>
+		<input id='startLng' type='hidden'>
+		<br>
+		<label for='endAddress'>Destination</label> <input id='endAddress' type='text' size='50'>
+		<input id='endLat' type='hidden'>
+		<input id='endLng' type='hidden'>
+		<br>
+		<button id='submitAddress'>Submit</button>
+	</div>
+
+	<div id='outputDiv'>
+		
+	</div>
+</div>
+
+<div class='x-small'>
+<p>* Ok, I lied. The API responsible for finding local gas prices is currently down so I hard-coded the "local" gas price to be $2.45, which was the price at the Chevron near where I lived in LA.</p>
+<p>** Ok, I lied again. The API to find MPG based on make/model isn't available for free so I used 26 mpg, which is about right for Bryan's (my friend) <a href='https://www.fueleconomy.gov/feg/bymodel/2001_Suzuki_Esteem.shtml'>2001 Suzuki Esteem sedan 4 cyl, 1.6 L, Automatic 4-spd</a>.</p>
+</div>
+
+</body>
+</html>
